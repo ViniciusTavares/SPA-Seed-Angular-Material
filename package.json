@@ -1,0 +1,23 @@
+{
+  "name": "single-page-application-seed",
+  "version": "1.0.0",
+  "description": "A skeleton project for Single Page Applications using AngularJS with Angular Material and IndexedDB.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vinicius Rafael Tavares",
+  "license": "ISC",
+  "dependencies": {
+    "bower": "^1.5.2",
+    "gulp": "^3.9.0"
+  },
+  "devDependencies": {
+    "connect-modrewrite": "^0.8.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^2.2.0",
+    "gulp-uglify": "^1.4.2",
+    "rimraf": "^2.4.3",
+    "run-sequence": "^1.1.4"
+  }
+}

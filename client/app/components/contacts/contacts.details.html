@@ -1,0 +1,33 @@
+
+  <div>
+
+   <md-content  layout-padding layout="row" layout-sm="column">
+ </md-content>
+  <md-content layout-padding >
+     <form name="contactForm" novalidate>
+       <md-input-container flex>
+         <label>Name (required, max 30)</label>
+         <input ng-maxlength="30" ng-model="vm.contact.name" ng-required="true" type="text">
+       </md-input-container>
+      <md-input-container flex>
+        <label>Phone Number (max 15)</label>
+      <input  ng-maxlength="15" ng-model="vm.contact.phone" type="text">
+    </md-input-container>
+    <md-input-container flex>
+      <label>Email (required, max 50)</label>
+      <input ng-model="vm.contact.email"  ng-maxlength="50" type="email" ng-required="true">
+    </md-input-container>
+    <md-input-container flex>
+      <label>Address (max 80)</label>
+      <input ng-model="vm.contact.address"  ng-maxlength="80" type="text" >
+    </md-input-container>
+       <div layout="row" layout-align="end">
+       <md-button aria-label="Cancel" ng-click="vm.cancelForm()" class="md-raised">Cancel</md-button>
+       <md-button aria-label="Save contact"  ng-click="vm.saveContact()"
+       ng-disabled="contactForm.$invalid" class="md-raised md-primary">Save</md-button>
+     </div>
+  </form>
+  </md-content>
+
+
+  </div>

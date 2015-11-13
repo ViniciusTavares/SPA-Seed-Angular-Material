@@ -1,0 +1,11 @@
+md-fab-speed-dial.md-fab-bottom-left.fixed {
+   position: fixed;
+}
+
+md-fab-speed-dial.md-fab-bottom-right.fixed {
+   position: fixed;
+}
+
+section.sidenav-section > md-backdrop {
+   position: fixed;
+}

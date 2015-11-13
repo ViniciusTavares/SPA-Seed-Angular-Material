@@ -1,0 +1,32 @@
+<div ng-cloak>
+<md-toolbar md-scroll-shrink class="md-accent md-hue-3" layout="row" flex layout-align="center center">
+   <i class="fa fa-group"> | </i>{{vm.contactOperation}}
+</md-toolbar>
+
+<div ui-view="list" ng-if="!vm.isEditing"></div>
+<div ng-if="vm.isEditing" ui-view="details"></div>
+
+<md-fab-speed-dial md-direction="up" md-open="vm.FABMenuIsOpen"
+   class="md-fling fixed md-fab-bottom-right" ng-class="{ 'md-hover-full': false }"
+   ng-mouseenter="vm.FABMenuIsOpen=true;" ng-mouseleave="vm.FABMenuIsOpen=false">
+   <md-fab-trigger>
+      <md-button  aria-label="Contacts" class="center md-fab md-warn">
+         <i class="display-center fa-th-large fa fa-2x"></i>
+      </md-button>
+   </md-fab-trigger>
+   <md-fab-actions>
+      <div ng-click="vm.addContact()" >
+         <md-button ng-if="!vm.isEditing"  aria-label="Add new Contact" ng-click="vm.addContact()" target="_blank"
+            class="md-icon-button md-mini md-fab md-raised ">
+            <i class="fa-user-plus fa"></i>
+         </md-button>
+      </div>
+      <div>
+         <md-button ng-if="vm.isEditing" aria-label="View all Contacts" ng-click="vm.cancelForm()" target="_blank"
+            class="md-icon-button md-mini md-fab md-raised ">
+            <i class="fa-users fa"></i>
+         </md-button>
+      </div>
+   </md-fab-actions>
+</md-fab-speed-dial>
+</div>

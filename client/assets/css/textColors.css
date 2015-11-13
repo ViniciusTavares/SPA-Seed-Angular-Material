@@ -1,0 +1,34 @@
+.color-blue {
+  color: rgb(7, 120, 184);
+}
+
+.color-green {
+  color: rgb(24, 162, 71);
+}
+
+.color-olive {
+  color: #3D9970;
+}
+
+.color-navy {
+  color: #001f3f;
+}
+
+.color-red {
+  color: #FF4136;
+}
+.color-fuchsia {
+  color: #F012BE;
+}
+
+.color-pink {
+  color: rgb(185, 0, 139);
+}
+
+.color-white {
+  color: rgb(255, 255, 255);
+}
+
+.color-black {
+  rgb(0, 0, 0);
+}

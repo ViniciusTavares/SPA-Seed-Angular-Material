@@ -1,0 +1,19 @@
+<div layout="row" layout-wrap >
+     <div ng-repeat="contact in vm.contactsList | orderBy : 'name':false" flex="50" flex-md="100" flex-sm="100" >
+        <md-card>
+           <md-card-content>
+              <h2 class="md-title"><i class="fa fa-user"></i> {{contact.name}}</h2>
+              <p>
+                 {{contact.phone}} <br/>
+                 {{contact.address}} <br/>
+                 {{contact.email}}
+              </p>
+           </md-card-content>
+           <div class="md-actions" layout="row" layout-align="end center">
+              <md-button ng-click="vm.deleteContact(contact.id)"><i class="fa fa-times"></i> Remove</md-button>
+              <md-button ng-click="vm.editContact(contact)"><i class="fa fa-edit"></i> Edit</md-button>
+           </div>
+        </md-card>
+
+     </div>
+  </div>

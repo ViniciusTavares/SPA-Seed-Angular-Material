@@ -1,0 +1,37 @@
+<div layout="column">
+   <md-toolbar md-scroll-shrink class="md-primary md-hue-2" layout="row" flex layout-align="center center">
+      <div layout="row" layout-align="start start">
+         <md-button ng-click="openMenu('sideMenu')"
+            aria-label="Open menu"
+            class="md-icon-button display-center">
+            <i class="fa-list fa fa-2x"></i>
+         </md-button>
+      </div>
+      <div layout="row" flex layout-align="end end">
+         <md-button  aria-label="Linkedin" ng-href="https://www.linkedin.com/in/viniciustavares93" target="_blank"
+            class="md-icon-button">
+            <i class="display-center fa-linkedin-square fa fa-3x"></i>
+         </md-button>
+         <md-button ng-href="https://github.com/ViniciusTavares/SPA-Seed-Angular-Material" target="_blank"
+            aria-label="Github"
+            class="md-icon-button">
+            <i class="fa-github-alt fa fa-3x"></i>
+         </md-button>
+      </div>
+   </md-toolbar>
+   <section layout="row" flex class="sidenav-section">
+      <md-sidenav class="position-fixed md-sidenav-left md-whiteframe-z3" md-component-id="sideMenu">
+         <md-toolbar class="md-primary md-hue-2">
+            <h1 class="md-toolbar-tools">Single Page Application Seed</h1>
+         </md-toolbar>
+            <md-list>
+               <md-list-item ng-click="navigateTo(item.route, 'sideMenu')" ng-repeat="item in menuItems | orderBy:'order'">
+                 <div class="md-list-item-text">
+                  <i class="{{item.icon}} padding-right-15"></i>
+                  {{ item.name }}
+                </div>
+               </md-list-item>
+            </md-list>
+      </md-sidenav>
+   </section>
+</div>

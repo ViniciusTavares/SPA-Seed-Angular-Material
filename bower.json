@@ -1,0 +1,22 @@
+{
+  "name": "AngularSeed",
+  "version": "0.0.0",
+  "authors": [
+    "Vinicius Tavares <vinicius.rafael19@hotmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "http://viniciusrtavares.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.6",
+    "angular-material": "~0.11.4",
+    "font-awesome": "~4.4.0",
+    "angular-indexed-db": "~1.1.3"
+  }
+}
