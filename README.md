@@ -2,9 +2,10 @@
 #SPA-Seed-Angular-Material
 
 This project is an skeleton with CRUD operations for Single Page Applications.
+
 In current version I used AngularJS as SPA framework and IndexedDB for storage data in memory.
             
-##Check the demo [here](http://viniciusrtavares.com/spa-seed/#/)        
+###Check the demo [here](http://viniciusrtavares.com/spa-seed/#/)        
             
 ###Structure:
                 
